@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .navbar .left, .navbar .right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: red;
+  }
+  

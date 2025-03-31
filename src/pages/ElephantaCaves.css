@@ -1,0 +1,210 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Hero Section with Background Image */
+.hero-section-elephanta {
+    position: relative;
+    width: 100%;
+    height: 670px; /* Increased height */
+    background-image: url('../Assets/elephanta-caves-mumbai.png'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark Overlay Effect */
+.overlay1 {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Remove backdrop-filter: blur(12px); */
+}
+
+/* Place Gateway Info Over the Background */
+.gateway-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px); /* Add blur to the container */
+}
+
+/* Flexbox for Layout */
+.gateway-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Info Section */
+.gateway-info {
+    flex: 2;
+}
+
+.gateway-info h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+}
+
+.rating {
+    font-size: 16px;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Tags */
+.info-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #333;
+    color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Entry Info */
+.entry-info {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.rate-us, .book-tour {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rate-us {
+    background-color: #0000ff;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.book-tour {
+    background-color: red;
+    color: white;
+}
+
+.rate-us:hover {
+    background-color: #ffb300;
+}
+
+.book-tour:hover {
+    background-color: rgb(26, 165, 8);
+}
+
+/* Extra Image beside Booking */
+.extra-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Ensures it stays within its container */
+}
+
+.extra-image {
+    width: 100%; /* Increase the width to take more space */
+    max-width: 800px; /* Set a reasonable max width */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Keep rounded corners */
+    box-shadow: 0px 4px 15px #000000; /* Add a more visible shadow */
+}
+
+
+/* About Section */
+.about-container {
+    background-color: hwb(0 100% 0% / 0.167); /* Semi-transparent */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #000000;
+}
+
+.about-container h2 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    font-size: 18px;
+    color: hsl(0, 92%, 5%);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gateway-container {
+        width: 105%;
+        top: 75%;
+    }
+
+    .gateway-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gateway-info {
+        padding-right: 0;
+    }
+
+    .extra-image-container {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rate-us, .book-tour {
+        width: 100%;
+    }
+}
+.location{
+    color: #fffb00;
+}
