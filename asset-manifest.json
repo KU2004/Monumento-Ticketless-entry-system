@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Monumento-Ticketless-entry-system/static/css/main.1d9d7762.css",
+    "main.js": "/Monumento-Ticketless-entry-system/static/js/main.81331c2d.js",
+    "static/js/453.79be3002.chunk.js": "/Monumento-Ticketless-entry-system/static/js/453.79be3002.chunk.js",
+    "static/media/elephanta-caves-mumbai.png": "/Monumento-Ticketless-entry-system/static/media/elephanta-caves-mumbai.0f546502b8ccb6f1e9d3.png",
+    "static/media/Gateway-of-India.jpg.webp": "/Monumento-Ticketless-entry-system/static/media/Gateway-of-India.jpg.81124a7c9a972f43e095.webp",
+    "static/media/image 4.png": "/Monumento-Ticketless-entry-system/static/media/image 4.bc7a4fcdef4b804748f5.png",
+    "static/media/image 5.png": "/Monumento-Ticketless-entry-system/static/media/image 5.c3dbd327f33e40cbf73f.png",
+    "static/media/image 1.png": "/Monumento-Ticketless-entry-system/static/media/image 1.bd7917d701b761964660.png",
+    "static/media/image 3.png": "/Monumento-Ticketless-entry-system/static/media/image 3.665913a96803d0662ebb.png",
+    "static/media/image 2.png": "/Monumento-Ticketless-entry-system/static/media/image 2.0432bd204a5a0caee347.png",
+    "static/media/Poster.jpeg": "/Monumento-Ticketless-entry-system/static/media/Poster.896151553a1b3cf8dab7.jpeg",
+    "static/media/Monumento.png": "/Monumento-Ticketless-entry-system/static/media/Monumento.8160d1f42b4f42a93807.png",
+    "static/media/elephanta-caves.png": "/Monumento-Ticketless-entry-system/static/media/elephanta-caves.193866cc8d740d046407.png",
+    "static/media/gateway-india-mumbai-india.png": "/Monumento-Ticketless-entry-system/static/media/gateway-india-mumbai-india.ccec2ad2c36362e1d03f.png",
+    "static/media/bot-avatar.png": "/Monumento-Ticketless-entry-system/static/media/bot-avatar.d6072280152b286afaa9.png",
+    "static/media/slick.svg": "/Monumento-Ticketless-entry-system/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Monumento-Ticketless-entry-system/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Monumento-Ticketless-entry-system/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Monumento-Ticketless-entry-system/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Monumento-Ticketless-entry-system/index.html",
+    "main.1d9d7762.css.map": "/Monumento-Ticketless-entry-system/static/css/main.1d9d7762.css.map",
+    "main.81331c2d.js.map": "/Monumento-Ticketless-entry-system/static/js/main.81331c2d.js.map",
+    "453.79be3002.chunk.js.map": "/Monumento-Ticketless-entry-system/static/js/453.79be3002.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d9d7762.css",
+    "static/js/main.81331c2d.js"
+  ]
+}
