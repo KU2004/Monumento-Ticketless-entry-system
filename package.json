@@ -2,6 +2,8 @@
   "name": "ticketless-entry-system",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ku2004.github.io/Monumento-Ticketless-entry-system/"
+
   
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
