@@ -1,0 +1,297 @@
+.payment-page {
+    .payment-container {
+        display: flex;
+        flex-direction: column; /* Arrange content vertically */
+        align-items: center; /* Center align all elements */
+        text-align: center; /* Center align text */
+        font-family: Arial, sans-serif;
+        padding: 30px; /* Increase padding for better spacing */
+        gap: 20px; /* Add spacing between child elements */
+        max-width: 600px; /* Limit maximum width for better readability */
+        box-sizing: border-box;
+        margin: 0 auto; /* Center the container */
+        line-height: 1.6; /* Improve text readability */
+        background: linear-gradient(135deg, #ffffff, #e8f5e9); /* Subtle gradient background */
+        border: 1px solid #ddd; /* Add a border for better separation */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        height: auto; /* Adjust height to fit all content dynamically */
+        min-height: 100vh; /* Ensure it covers the full viewport height */
+    }
+
+    .payment-container.vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-container h1 {
+        font-size: 28px; /* Slightly larger font size */
+        margin-bottom: 20px;
+        flex: 1; /* Allow the heading to take up space */
+        color: #2e7d32; /* Green color for better emphasis */
+        text-transform: uppercase; /* Make heading uppercase */
+        letter-spacing: 1px; /* Add spacing between letters */
+    }
+
+    .payment-container p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #555; /* Subtle text color for better readability */
+        line-height: 1.8; /* Improve readability */
+    }
+
+    .payment-container .time-remaining {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px; /* Add spacing below */
+        color: #ff5722; /* More vibrant color for timer */
+    }
+
+    .payment-container ol {
+        list-style-type: decimal;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        flex: 1; /* Allow the list to take up space */
+        text-align: left; /* Align instructions to the left */
+        width: 100%; /* Make list take full width */
+        max-width: 300px; /* Limit maximum width */
+        margin: 0 auto; /* Center align the list */
+        background-color: #fff; /* Add background for better contrast */
+        padding: 15px; /* Add padding for spacing */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .payment-container ol li {
+        margin-bottom: 10px;
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    .payment-container ol li:hover {
+        color: #007BFF; /* Change color on hover */
+    }
+
+    .qr-container {
+        margin: 0 auto; /* Center the QR container horizontally */
+        text-align: center;
+        border: 2px solid #007BFF;
+        padding: 70px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #e3f2fd, #e8f5e9); /* Softer gradient */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth shadow transition */
+        flex: 1; /* Allow the QR container to take up space */
+        width: 100%; /* Make QR container take full width */
+        max-width: 300px; /* Limit maximum width */
+        margin-bottom: 40px; /* Increase spacing below QR container */
+    }
+
+    .qr-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance hover shadow */
+    }
+
+    .qr-container p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .upload-container {
+        margin-top: 30px;
+        text-align: center;
+        padding: 25px;
+        border: 2px dashed #4caf50;
+        border-radius: 15px;
+        background-color: #f1f8e9;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 450px;
+        margin: 0 auto; /* Center the container */
+    }
+
+    .upload-container:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .upload-container h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2e7d32;
+        margin-bottom: 10px;
+    }
+
+    .upload-container p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .upload-input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #4caf50;
+        border-radius: 8px;
+        font-size: 16px;
+        background-color: #ffffff;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .upload-input:focus {
+        outline: none;
+        border-color: #007BFF;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    }
+
+    .screenshot-preview img {
+        margin-top: 15px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border: 3px solid #007BFF;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .screenshot-preview img:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+        .payment-container {
+            padding: 15px; /* Adjust padding for medium screens */
+            border-radius: 5px; /* Reduce border radius on smaller screens */
+        }
+
+        .qr-container,
+        .upload-container {
+            max-width: 100%; /* Allow full width on smaller screens */
+            padding: 15px; /* Adjust padding for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .payment-container {
+            padding: 5px; /* Further reduce padding for very small screens */
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
+
+        .new-btn {
+            font-size: 12px; /* Adjust font size for smaller screens */
+            padding: 8px 15px; /* Adjust padding */
+        }
+    }
+}
+
+/* Enhanced button styles */
+.new-btn {
+    margin-top: 10px; /* Reduced margin */
+    padding: 12px 25px; /* Adjust padding for better usability */
+    background: linear-gradient(90deg, #28a745, #218838); /* Green gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font size */
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%; /* Responsive button */
+    max-width: 200px; /* Reduced max width */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 0.5px; /* Add letter spacing */
+}
+
+.new-btn:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34); /* Darker hover gradient */
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger hover shadow */
+    filter: brightness(1.2); /* Slightly brighter on hover */
+}
+
+.new-btn:focus {
+    outline: 3px solid #1e7e34; /* Prominent focus outline */
+    box-shadow: 0 0 15px rgba(33, 136, 56, 0.7); /* Enhanced glow effect */
+    animation: pulse 1s infinite; /* Add subtle pulsing effect */
+}
+
+.new-btn:active {
+    transform: scale(0.97); /* Slightly smaller on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.small-btn {
+    margin: 5px; /* Add spacing between buttons */
+    display: inline-block; /* Align buttons horizontally */
+}
+
+.animated-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.popup-overlay {
+    position: fixed; /* Ensure it covers the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px); /* Increase blur effect */
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay for better contrast */
+    display: flex; /* Center content */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.popup-content button {
+    width: 30px; /* Decrease button size */
+    height: 30px;
+    font-size: 14px; /* Adjust font size */
+    padding: 0; /* Remove extra padding */
+    line-height: 30px; /* Center text vertically */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 15px; 
+    margin-bottom: 10px;/* Add spacing above the container */
+}
