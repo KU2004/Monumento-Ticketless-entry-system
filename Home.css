@@ -1,0 +1,531 @@
+/* ✅ General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Removes horizontal scrollbar */
+  background-color: #f5f5f5; /* Light background */
+}
+
+/* ✅ Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #f1f1f1, #ff5e00);
+  padding: 15px;
+  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto; /* Push elements to the right */
+}
+
+.languageSelector1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  padding: 8px 15px; /* Increased padding for better spacing */
+  border-radius: 25px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 40px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.languageSelector1:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.languageSelector1 select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333; /* Darker text for better readability */
+}
+
+.languageSelector1 select:hover {
+  color: #007bff; /* Highlight text on hover */
+}
+
+.languageSelector select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.languageSelector select:hover {
+  color: #007bff;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* ✅ Search Bar */
+.Searchbar {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-left: 45px; /* Added margin to the right */
+}
+
+.searchBar {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 500px;
+
+}
+
+.searchIcon {
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* ✅ District Modal Enhanced */
+.district-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Soft blur background */
+  z-index: 1000;
+}
+
+.district-popup {
+  background: linear-gradient(135deg, #ff5e00, #ff8800);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: popUp 0.4s ease;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.district-popup input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.district-list {
+  max-height: 220px;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.district-item {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 6px;
+  background: #f1f1f1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.district-item:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  background: darkred;
+  transform: translateY(-2px);
+}
+
+
+/* ✅ Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%); /* Change as needed */
+  padding: 10px 20px;
+}
+
+.nav-left {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 25px;
+}
+
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  border: 2px solid orange;
+  background-color: orange;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+/* ✅ Section Title */
+.addBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #f8f9fa;
+}
+
+.addBar h1 {
+  color: #007BFF;
+  font-size: 28px;
+}
+
+
+
+/* ✅ Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel-card {
+  min-width: 300px;
+  max-width: 300px;
+  height: 380px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  z-index: 1000; 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Decrease font size */
+  width: 20px; /* Reduce button size */
+  height: 20px;
+  border-radius: 50%; /* Circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .Searchbar {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectiondiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: 10px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-card {
+    min-width: 250px;
+    max-width: 250px;
+    height: 320px;
+  }
+}
+.seeAll {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  padding: 8px 16px; /* Reduce padding */
+  font-size: 16px; /* Decrease text size */
+  border-radius: 4px; /* Keep rounded corners */
+}
+
+.seeAll:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ Move text down on hover */
+.card-text {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-card:hover .card-text {
+  transform: translateY(20px); /* Moves text down */
+  opacity: 1; /* Ensures visibility */
+}
+.poster-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.poster-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.popular-sites-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+.popular-card {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 10px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5e00;
+  border-left: 5px solid #ff5e00;
+  padding-left: 10px;
+}
+
+
+.popular-sites, .monuments, .forts, .sanctuaries {
+  margin-bottom: 30px;
+}
+.card {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.section:nth-child(even) {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+.see-all-btn {
+  padding: 8px 15px;
+  background-color: #ff5e00;
+  color: white;
+  border-radius: 5px;
+  float: right;
+  margin: 10px;
+}
+
+
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dim background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 999; /* Behind chatbot window */
+}
+
+/* Updated Login Button Styles */
+.login-btn {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.login-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.select-district-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-district-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
